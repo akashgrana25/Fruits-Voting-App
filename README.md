@@ -4,7 +4,27 @@
 This is an implementation of a voting application where a user can login and vote for their favorite fruit. The user can log back in as see which fruit they voted for.  The application is created using ReactJS in the front-end and PHP at the backend with MYSQL database.
 
 ### Note
-In this implementation the user can vote once per login session. 
+The code has been deployed on AWS EC2 => http://ec2-52-201-227-81.compute-1.amazonaws.com:5000/
+A production build for the code is uploaded. To run the production build use the following commands
+
+```sh
+$ cd Application_Name
+$ npm install
+$ npm run build
+```
+After the build is complete use this to host on a static server
+
+```sh
+$ npm install -g serve
+$ serve -s build
+```
+
+This build will run on 
+```sh 
+localhost: 5000
+```
+
+For this implementation the user can vote once per login session. 
 
   
 ### Tech
