@@ -27,7 +27,7 @@ export default class RatingList extends Component {
     }
 
     getList() {
-        axios.get('http://localhost:8080/voting-app/index.php')
+        axios.get('http://ec2-52-201-227-81.compute-1.amazonaws.com/voting-app/fva-index.php')
             .then(res => {
                 const list = res.data;
                 this.setState({

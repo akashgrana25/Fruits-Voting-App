@@ -28,7 +28,7 @@ export default class Dashboard extends Component {
     }
 
     handleLastVoted() {
-        fetch('http://localhost:8080/voting-app/getvote.php', {
+        fetch('http://ec2-52-201-227-81.compute-1.amazonaws.com/voting-app/fva-getvote.php', {
             method: 'POST',
             body: JSON.stringify({
                 "SessionId": this.props.location.state.SessionId

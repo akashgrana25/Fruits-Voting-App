@@ -27,7 +27,7 @@ export default class Login extends Component {
 
     validateLogin(userData) {
         return new Promise((resolve, reject) => {
-            fetch('http://localhost:8080/voting-app/login.php', {
+            fetch('http://ec2-52-201-227-81.compute-1.amazonaws.com/voting-app/fva-login.php', {
                 method: 'POST',
                 body: JSON.stringify({
                         "username": this.state.username,

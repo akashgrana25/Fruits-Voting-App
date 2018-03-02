@@ -18,7 +18,7 @@ export default class List extends Component {
     handleSubmit(event) {
         event.preventDefault();
 
-        fetch('http://localhost:8080/voting-app/submitvote.php', {
+        fetch('http://ec2-52-201-227-81.compute-1.amazonaws.com/voting-app/fva-submitvote.php', {
             method: 'POST',
             body: JSON.stringify({
                 "FRUIT_ID": this.state.fruitId,
